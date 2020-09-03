@@ -9,3 +9,8 @@ $('#search').on('click',function(){
     })
 })
 
+$('#results').on('click','.recipe-img',function(){
+    const $recipe = $(this).closest('.recipe')
+    const ingredient = $recipe.find('.ingredients').find('.ingredient')
+    alert(ingredient[0].textContent)
+})

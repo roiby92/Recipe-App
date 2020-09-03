@@ -1,6 +1,10 @@
 body{
     background-color: whitesmoke;
 }
+h1{
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+}
 
 #container{
     display: grid;
@@ -27,18 +31,33 @@ body{
 
 #results{
     grid-area: r;
-    margin-top: 5px;
+    margin-top: 7px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 
 .recipe{
-    height: 300px;
-    width: 200px;
+    border: 3px black solid;
+    display: grid;
+    grid-template-rows: 1fr 5fr 5fr;
+    font-family: 'Grandstander', cursive;
+}
+.recipe>a{
+    display: block;
+    align-self: center;
+    justify-self: center;
 }
 
 .recipe-img{
-    height: 150px;
-    width: 150pxpx
+    height: 200px;
+    width: 250px;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 4px;
+}
+
+.ingredients{
+    margin-left: 5px;
 }
