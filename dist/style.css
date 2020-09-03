@@ -32,3 +32,13 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
+
+.recipe{
+    height: 300px;
+    width: 200px;
+}
+
+.recipe-img{
+    height: 150px;
+    width: 150pxpx
+}

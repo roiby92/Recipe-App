@@ -22,7 +22,17 @@
     </div>
 
     <script id="ingredient-template" type="text/x-handlebars-template">
-
+        {{#each data}}
+        <div class="recipe">
+            <a href="{{href}}" onerror="this.href='#'">{{title}}</a>
+            <img class="recipe-img" src="{{thumbnail}}">
+            <ol class="ingredients">
+            {{#each ingredients}}
+                <li class="ingredient">{{this}}</li>
+            {{/each}}
+            </ol>
+        </div>
+        {{/each}}
     </script>
 
 
