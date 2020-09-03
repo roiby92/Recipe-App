@@ -1,0 +1,34 @@
+body{
+    background-color: whitesmoke;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 2fr 50fr ;
+    grid-template-areas: "u" "r";
+}
+
+#upper{
+    grid-area: u;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-areas: "i s";
+}
+
+#ingredient{
+    grid-area: i;
+    display: inline;
+    height: 40px;
+}
+#search{
+    grid-area: s;
+    display: inline;
+}
+
+#results{
+    grid-area: r;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
